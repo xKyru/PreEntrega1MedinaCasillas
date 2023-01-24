@@ -1,0 +1,22 @@
+html{
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,17 @@
+.container{
+    max-width: 160rem;
+    width: 90%;
+    margin: 0 auto;
+    &.container-md{
+        max-width: 120rem;
+    }
+    &.container-sm{
+        max-width: 90rem;
+    }
+}
+.section{
+    padding: 3rem 0;
+    @include minWidth(768){
+        padding: 5rem 0;
+    }
+}
