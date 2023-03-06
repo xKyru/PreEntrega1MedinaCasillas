@@ -1,0 +1,7 @@
+.cart-list{
+    background-color: rgba(var(--darkColor), 0.25);
+    box-shadow: none;
+    .cart-product:not(:last-child) {
+        border-color: rgba(var(--lightColor), 0.2);
+    }
+}

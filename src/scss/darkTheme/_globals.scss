@@ -1,0 +1,8 @@
+body.dark-mode{
+    background-color: #121212;
+    --lightColor: 232, 234, 237;
+    color: rgb(var(--lightColor));
+    img{
+        filter: contrast(0.8);
+    }
+}

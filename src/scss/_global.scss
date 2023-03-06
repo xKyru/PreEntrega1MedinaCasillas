@@ -1,15 +1,33 @@
+:root{
+    --primaryColor: 255, 102, 0;
+    --redColor: 237, 28, 35;
+    --greenColor: 37, 211, 102;
+    --yellowColor: 236, 200, 43;
+    --lightColor: 255, 255, 255;
+    --darkColor: 0, 0, 0;
+}
+
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 *, *:before, *:after{
     box-sizing: border-box;
 }
 
+*:focus, *:active{
+    outline: none;
+}
+
 body{
     font-family: 'Nunito', sans-serif;
     font-size: 1.6rem;
+    overflow-x: hidden;
+    background-color: rgb(var(--lightColor));
+    color: rgb(var(--darkColor));
 }
+
 
 img{
     max-width: 100%;
@@ -19,4 +37,9 @@ img{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.container > h2{
+    font-size: 2.6rem;
+    margin-top: 0;
 }

@@ -2,6 +2,9 @@
     max-width: 160rem;
     width: 90%;
     margin: 0 auto;
+    &.container-lg{
+        max-width: 140rem;
+    }
     &.container-md{
         max-width: 120rem;
     }
@@ -13,5 +16,58 @@
     padding: 3rem 0;
     @include minWidth(768){
         padding: 5rem 0;
+    }
+}
+
+%btn{
+    border: none;
+    background-color: rgb(var(--primaryColor));
+    color: rgb(var(--lightColor));
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    span{
+        z-index: 1;
+        position: relative;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: rgb(var(--primaryColor));
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: 0.3s;
+    }
+    &:hover{
+        &:before{
+            transform: scale(1.03) 
+        }
+    }
+}
+
+.alert{
+    text-align: center;
+    background-color: rgb(var(--greenColor));
+    color: rgb(var(--lightColor));
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    &.alert-error{
+        background-color: rgb(var(--redColor));
     }
 }

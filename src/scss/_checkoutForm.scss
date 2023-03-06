@@ -1,0 +1,29 @@
+.checkout-form{
+    max-width: 60rem;
+    margin: 0 auto;
+    .form-field{
+        display: flex;
+        flex-direction: column;
+        label{
+            font-weight: 600;
+            color: rgba(var(--darkColor), 0.7);
+        }
+        input{
+            padding: 10px;
+            border: 1px solid rgba(var(--darkColor), 0.3);
+            border-radius: 5px;
+            font-size: 1.8rem;
+        }
+        &:not(:last-of-type){
+            margin-bottom: 2rem;
+        }
+    }
+    .form-submit{
+        .submit-btn{
+            @extend %btn;
+            max-width: 25rem;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+        }
+    }
+}

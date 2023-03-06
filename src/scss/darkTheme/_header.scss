@@ -1,0 +1,20 @@
+.header-info{
+    .logo img{
+        -webkit-filter: invert(1);
+        filter: invert(1) opacity(0.85);
+    }
+}
+
+.navbar-wrap{
+    border-bottom-color: rgba(var(--lightColor), 0.2);
+}
+
+.toggle-menu{
+    span{
+        background-color: rgb(var(--lightColor));
+    }
+}
+
+.dark-mode-container i{
+    color: rgb(var(--darkColor));
+}

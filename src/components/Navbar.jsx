@@ -1,14 +1,19 @@
-import NavbarNavigation from "./NavbarNavigation";
+import Navigation from "./Navigation";
 import CartWidget from "./CartWidget";
+import DarkModeButton from "./DarkModeButton";
 const Navbar = () => {
+  
   return (
     <nav className="navbar-wrap">
       <div className="container container-sm">
         <div className="nav-container">
-          <NavbarNavigation/>
+          <Navigation/>
         </div>
         <div className="cart-container">
-          <CartWidget cartCount={5}/>
+          <CartWidget/>
+        </div>
+        <div className="dark-mode-container">
+          <DarkModeButton />
         </div>
       </div>
     </nav>

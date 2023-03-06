@@ -1,5 +1,24 @@
 @import './scss/mixins';
+// @import './scss/variables';
 @import './scss/global';
 @import './scss/utilities';
 @import './scss/header';
 @import "./scss/itemsList";
+@import "./scss/itemDetail";
+@import "./scss/checkoutForm";
+@import "./scss/cart";
+@import "./scss/footer";
+
+
+/* Dark Mode */
+@import "./scss/darkTheme/globals";
+
+body.dark-mode{
+    @import './scss/darkTheme/header';
+    @import './scss/darkTheme/itemList';
+    @import './scss/darkTheme/itemDetail';
+    @import './scss/darkTheme/cart';
+    @import './scss/darkTheme/checkoutForm';
+
+    @import './scss/darkTheme/footer';
+}
